@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="progress">
+                <!--отвечает за содержимое прогресс-бара-->
+                <div class="progress-bar progress-bar-primary" style="
+                min-width:2%;
+                width:50%;
+                ">
+                    <!--progress-bar-primary/succes/danger/warning/info 
+                 - задает цвет в полоске прогресс-бара-->
+                    <!--чтобы посмотреть в движении, нужно подключить js 
+                 или F12 и увеличить width стрелочками-->
+                    0%
+                </div>
+
+            </div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="
+                min-width:2%;
+                width:50%;
+                ">
+                    0%
+                    <!--progress-bar-striped задает полосатость, т/е накладывает градиент
+                    active создает движение полосок
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

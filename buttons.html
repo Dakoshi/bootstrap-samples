@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+    body {
+        background-color: #333;
+        color: white;
+        clear: left;
+    }
+    </style>
+    <h1>Hello, world!</h1>
+        <div class="container">
+            <div class="row">
+                <p>
+                    <a href="" class="btn btn-default">Кнопка</a>
+                    <!--Белая-->
+                    <a href="" class="btn btn-primary">Кнопка</a>
+                    <!--Синяя-->
+                    <a href="" class="btn btn-success">Кнопка</a>
+                    <!--Зеленая-->
+                    <a href="" class="btn btn-warning">Кнопка</a>
+                    <!--Оранжевая-->
+                    <a href="" class="btn btn-info">Кнопка</a>
+                    <!--Голубая-->
+                    <a href="" class="btn btn-danger">Кнопка</a>
+                    <!--Красная-->
+                    <a href="" class="btn btn-link">Кнопка</a>
+                    <!--Кнопка-ссылка-->
+                </p>
+                <p><a href="" class="btn btn-default"><i class="glyphicon glyphicon-star"></i></a></p>
+                <!--Добавить иконку в кнопку. Можно сделать анимацию в owesome-->
+                <p>
+                    <a href="" class="btn btn-primary btn-lg"></a>
+                    <a href="" class="btn btn-primary btn-md"></a>
+                    <a href="" class="btn btn-primary btn-sm"></a>
+                    <a href="" class="btn btn-primary btn-xs"></a>
+                </p>
+                <!--Кнопки, отличающиеся размером-->
+                <p>
+                    <a href="" class="btn btn-success btn-block active">Кнопка</a>
+                    <!--Кнопка будет шириной с весь блок
+                    active - типа класса hover/focus-->
+                </p>
+                <p><a href="" class="btn btn-success btn-block disabled">Кнопка</a></p>
+                <!--Утопленная, нельзя нажать-->
+                <p><button class="btn btn-primary btn-lg btn-block" type="submit">Отправить</button></p>
+                <!--для тэга button-->
+                <p><input class="btn btn-primary btn-lg btn-block" type="submit" value="Отправить"></p>
+                <!--для тэга input -для формы-->
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="btn-toolbar">
+                        <!--btn-toolbar делает все три блока, которые ниже, в один ряд-->
+                    <div class="btn-group group-lg">
+                        <!--group-lg делает группу кнопок большой
+                        group-justified делает группу кнопок шириной на всю ширину контейнера
+                        -->
+                        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i></a>
+                        <a href="" class="btn btn-primary"><i class="glyphicon glyphicon-pause"></i></a>
+                        <a href="" class="btn btn-success"><i class="glyphicon glyphicon-step-forward"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i></a>
+                        <a href="" class="btn btn-primary"><i class="glyphicon glyphicon-pause"></i></a>
+                        <a href="" class="btn btn-success"><i class="glyphicon glyphicon-step-forward"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i></a>
+                        <a href="" class="btn btn-primary"><i class="glyphicon glyphicon-pause"></i></a>
+                        <a href="" class="btn btn-success"><i class="glyphicon glyphicon-step-forward"></i></a>
+                    </div>
+
+                <p>
+                    <div class="btn-group btn-group-vertical">
+                        <a href="" class="btn btn-default"><i class="glyphicon glyphicon-step-backward"></i></a>
+                        <a href="" class="btn btn-primary"><i class="glyphicon glyphicon-pause"></i></a>
+                        <a href="" class="btn btn-success"><i class="glyphicon glyphicon-step-forward"></i></a>
+                    </div>
+                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="btn-group">
+                        <!--если добавить класс dropup каретка поворачиваеися и список открывается вверх
+                        pull-right = float right, то есть кнопка выравнивается по правой стороне-->
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Выпадающее меню
+                            <!--dropdown-toggle - делает кнопку круглой
+                            data-toggle="dropdown" позволяет списку раскрыться-->
+                            
+                        </button>
+
+
+                        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+
+                        <!--делает справа каретку в виде отдельной части кнопки, зеленая-->
+
+                        
+                        <ul class="dropdown-menu">
+                            <!--если прописать класс dropdown-menu-right выпадающий список выровлняется по правому краю-->
+                            <li>
+                                <a href="">a</a>
+                                <a href="">a</a>
+                                <a href="">a</a>
+                                <a href="">a</a>
+                                <a href="">a</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <nav class="text-center">
+        <!--text-center отвечает за выравнивание по центру, так как это отчасти строчный элемент (inline-block)-->
+            <ul class="pagination pagination-lg">
+                <!--pagination-размер бывает lg и sm-->
+                <li class="disabled"><a href=""><i class="glyphicon glyphicon-step-backward"></i></a></li>
+                <!--class="disabled" показывает, что нельзя нажать и делает надписи на кнопке серыми-->
+                <li class="disabled"><a href=""><i class="glyphicon glyphicon-arrow-left"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <!--class="active" подсвечивает активную кнопку-->
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href=""><i class="glyphicon glyphicon-arrow-right"></i></a></li>
+                <li><a href=""><i class="glyphicon glyphicon-step-forward"></i></a></li>    
+            </ul>
+        </nav>
+        <nav>
+            <ul class="pager">
+            <!--размеров у него нет-->
+                <li class="previous disabled"><a href="#">&larr; Старее</a></li>
+                <!--class="previous" выравнивает кнопку по левому краю
+                &larr;- код специального символа в css-->
+                <li class="next"><a href="#">Новее &rarr;</a></li>
+                <!--class="next" выравнивает кнопку по правому краю
+                &rarr; - код специального символа в css-->
+            </ul>
+        </nav>
+</div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+        <script src="js/salvattore.min.js"></script>
+</body>
+
+</html>

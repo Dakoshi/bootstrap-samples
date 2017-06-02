@@ -1,0 +1,100 @@
+@import "bootstrap.css";
+
+.blue div {
+    height: 300px;
+    background: lightblue;
+}
+
+.grey div {
+    height: 300px;
+    background: #333;
+}
+
+.pink div {
+    height: 200px;
+    background: pink;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.navbar-right {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .masonry[data-columns]::before {
+        content:"1 .col-xs-12";
+    }
+}
+/*content + число - число подставляется в html data-columns и задает кол-во колонок
+*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .masonry[data-columns]::before {
+        content:"2 .col-xs-6";
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .masonry[data-columns]::before {
+        content:"3 .col-xs-4";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .masonry[data-columns]::before {
+        content:"3 .col-xs-4";
+    }
+}
+/*В плагине не работает автообновление. Решается запуском на локальном сервере.*/
+
+
+.breadcrumb > li + li:before {
+    content: "\f105";
+    font-family: "FontAwesome"
+}
+
+.footer {
+    background: #222222 none repeat scroll 0 0;
+    border-top: 4px solid #fcab0e;
+    margin: 0;
+    padding: 20px 0;
+}
+.footer_dv {
+    width: 100%;
+}
+.footer_dv h4 {
+    color: #fcab0e;
+    font-family: roboto;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.footer_dv ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.footer_dv ul li:first-child {
+    border-top: medium none;
+    box-shadow: none;
+}
+.footer_dv ul li {
+    border-top: 1px solid #000;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+    color: #f1f2f2;
+    padding: 5px 0;
+}
+.footer_dv p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-align: justify;
+}
+
+.button {
+    color: red;
+}
